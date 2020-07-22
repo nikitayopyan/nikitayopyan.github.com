@@ -1,0 +1,354 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?4hfdb8');
+  src:  url('../fonts/icomoon.eot?4hfdb8#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?4hfdb8') format('truetype'),
+    url('../fonts/icomoon.woff?4hfdb8') format('woff'),
+    url('../fonts/icomoon.svg?4hfdb8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-download-from-windows-store-icon-seeklogocom .path1:before {
+  content: "\e900";
+  color: rgb(48, 140, 79);
+}
+.icon-download-from-windows-store-icon-seeklogocom .path2:before {
+  content: "\e901";
+  margin-left: -2.3486328125em;
+  color: rgb(40, 41, 41);
+}
+.icon-download-from-windows-store-icon-seeklogocom .path3:before {
+  content: "\e902";
+  margin-left: -2.3486328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-from-windows-store-icon-seeklogocom .path4:before {
+  content: "\e903";
+  margin-left: -2.3486328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-from-windows-store-icon-seeklogocom .path5:before {
+  content: "\e904";
+  margin-left: -2.3486328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-from-windows-store-icon-seeklogocom .path6:before {
+  content: "\e905";
+  margin-left: -2.3486328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path1:before {
+  content: "\e906";
+  color: rgb(179, 181, 183);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path2:before {
+  content: "\e907";
+  margin-left: -3.361328125em;
+  color: rgb(34, 33, 36);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path3:before {
+  content: "\e908";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path4:before {
+  content: "\e909";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path5:before {
+  content: "\e90a";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path6:before {
+  content: "\e90b";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path7:before {
+  content: "\e90c";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path8:before {
+  content: "\e90d";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path9:before {
+  content: "\e90e";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path10:before {
+  content: "\e90f";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path11:before {
+  content: "\e910";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path12:before {
+  content: "\e911";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path13:before {
+  content: "\e912";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path14:before {
+  content: "\e913";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path15:before {
+  content: "\e914";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path16:before {
+  content: "\e915";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path17:before {
+  content: "\e916";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path18:before {
+  content: "\e917";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path19:before {
+  content: "\e918";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path20:before {
+  content: "\e919";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path21:before {
+  content: "\e91a";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path22:before {
+  content: "\e91b";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path23:before {
+  content: "\e91c";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path24:before {
+  content: "\e91d";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-download-on-the-app-store-flat-badge-seeklogocom .path25:before {
+  content: "\e91e";
+  margin-left: -3.361328125em;
+  color: rgb(254, 254, 254);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path1:before {
+  content: "\e91f";
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path2:before {
+  content: "\e920";
+  margin-left: -2.5830078125em;
+  color: rgb(16, 15, 13);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path3:before {
+  content: "\e921";
+  margin-left: -2.5830078125em;
+  color: rgb(162, 162, 161);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path4:before {
+  content: "\e922";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path5:before {
+  content: "\e923";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path6:before {
+  content: "\e924";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path7:before {
+  content: "\e925";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path8:before {
+  content: "\e926";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path9:before {
+  content: "\e927";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path10:before {
+  content: "\e928";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path11:before {
+  content: "\e929";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path12:before {
+  content: "\e92a";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path13:before {
+  content: "\e92b";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path14:before {
+  content: "\e92c";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path15:before {
+  content: "\e92d";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path16:before {
+  content: "\e92e";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path17:before {
+  content: "\e92f";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path18:before {
+  content: "\e930";
+  margin-left: -2.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path19:before {
+  content: "\e931";
+  margin-left: -2.5830078125em;
+  color: rgb(0, 0, 0);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path20:before {
+  content: "\e932";
+  margin-left: -2.5830078125em;
+  color: rgb(0, 0, 0);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path21:before {
+  content: "\e933";
+  margin-left: -2.5830078125em;
+  color: rgb(0, 0, 0);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path22:before {
+  content: "\e934";
+  margin-left: -2.5830078125em;
+  color: rgb(0, 0, 0);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path23:before {
+  content: "\e935";
+  margin-left: -2.5830078125em;
+  color: rgb(16, 15, 13);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path24:before {
+  content: "\e936";
+  margin-left: -2.5830078125em;
+  color: rgb(0, 0, 0);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path25:before {
+  content: "\e937";
+  margin-left: -2.5830078125em;
+  color: rgb(0, 0, 0);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path26:before {
+  content: "\e938";
+  margin-left: -2.5830078125em;
+  color: rgb(16, 15, 13);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path27:before {
+  content: "\e939";
+  margin-left: -2.5830078125em;
+  color: rgb(0, 0, 0);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path28:before {
+  content: "\e93a";
+  margin-left: -2.5830078125em;
+  color: rgb(0, 0, 0);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path29:before {
+  content: "\e93b";
+  margin-left: -2.5830078125em;
+  color: rgb(16, 15, 13);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path30:before {
+  content: "\e93c";
+  margin-left: -2.5830078125em;
+  color: rgb(0, 0, 0);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path31:before {
+  content: "\e93d";
+  margin-left: -2.5830078125em;
+  color: rgb(58, 58, 59);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path32:before {
+  content: "\e93e";
+  margin-left: -2.5830078125em;
+  color: rgb(0, 0, 0);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path33:before {
+  content: "\e93f";
+  margin-left: -2.5830078125em;
+  color: rgb(58, 58, 59);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path34:before {
+  content: "\e940";
+  margin-left: -2.5830078125em;
+  color: rgb(0, 0, 0);
+}
+.icon-get-it-on-google-play-badge-seeklogocom .path35:before {
+  content: "\e941";
+  margin-left: -2.5830078125em;
+  color: rgb(0, 0, 0);
+}
