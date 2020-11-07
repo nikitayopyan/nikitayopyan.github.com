@@ -10,7 +10,7 @@ function timer(deadlineDate){
                 minutes = Math.floor((t / 1000 / 60) % 60), // минутах 
                 seconds = Math.floor((t / 1000) % 60); // секундах
     
-            return {           //возвращаем все переменные в объект, который в дальнейшей функции можем использовать
+            return {          
                 'total': t,
                 'days': days,
                 'hours': hours,
@@ -20,23 +20,23 @@ function timer(deadlineDate){
         }
     
         function setClock(selector, endtime){               
-            const timer = document.querySelector(selector),         //обращаемся к элементам вёрстки 
+            const timer = document.querySelector(selector),         
                 days = document.querySelector('#days'),
                 hours = document.querySelector('#hours'),
                 minutes = document.querySelector('#minutes'),
                 seconds = document.querySelector('#seconds'),
-                timeInterval = setInterval(updateClock, 1000);    //задаём интервал в 1 секунду, чтобы он обновлялся каждую секунду, в обратном отсчёте
+                timeInterval = setInterval(updateClock, 1000);    
     
             function updateClock(){
-                const t = remainingTime(endtime);       // задаём переменную t, в которой лежит 1ая функция, чтобы обратиться к свойствам объекта return
+                const t = remainingTime(endtime);      
     
-                days.innerHTML = getZero(t.days);       //кладём в элементы вёрстки содержимое первой функции
+                days.innerHTML = getZero(t.days);       
                 hours.innerHTML = getZero(t.hours);
                 minutes.innerHTML = getZero(t.minutes);
                 seconds.innerHTML = getZero(t.seconds);
     
                 if(t.total <= 0){
-                    clearInterval(timeInterval);        // при завершении обратного отсчёта таймер закончится
+                    clearInterval(timeInterval);        
                 }
             }
         }

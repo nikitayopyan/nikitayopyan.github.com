@@ -25,13 +25,13 @@ function modal(modalWindow, triggerModal, modalTimer){
         i.addEventListener('click', () => modalOpen(modalWindow, modalTimer));
     });
 
-    modal.addEventListener('click', (e) => {          // закрываем модальное окно по области ВНЕ самого окна
+    modal.addEventListener('click', (e) => {          
         if (e.target === modal || e.target.getAttribute('data-closed') == ''){
             closeModal(modalWindow);
         }
     });
 
-    document.addEventListener('keydown', event =>{    // закрываем окно клавишей Esc
+    document.addEventListener('keydown', event =>{    
         if (event.code == 'Escape'){
             closeModal(modalWindow);
         }

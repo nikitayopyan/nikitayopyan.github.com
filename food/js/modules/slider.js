@@ -122,46 +122,6 @@ function slider({counter, container, prev, next, slide, wrapper, field}){
             currentSlide.textContent = getZero(index);
         });
     });
-    // if(sliderImage.length < 10){                                 2 вариант слайдера
-    //     totalSlides.textContent = getZero(sliderImage.length);
-    // } else {
-    //     totalSlides.textContent = sliderImage.length;
-    // }
-
-    // showSlide(index);
-    // function showSlide(i){
-    //     if (i < 1){ 
-    //         index = sliderImage.length;
-    //     }
-    //     if(i > sliderImage.length){ 
-    //         index = 1;
-    //     }
-    //     sliderImage.forEach(slide => {
-    //         slide.classList.add('hide');
-    //         slide.classList.remove('show');
-    //     });
-
-    //     sliderImage[index - 1].classList.add('show');
-    //     sliderImage[index - 1].classList.remove('hide');
-     
-    //     if(sliderImage.length < 10){
-    //         currentSlide.textContent = getZero(index);
-    //     } else {
-    //         currentSlide.textContent = index;
-    //     }
-    // }
-    // function plusSlide(i){
-    //     showSlide(index += i);
-    // }
-    // nextSlideBtn.addEventListener('click', (e) => {       
-    //     plusSlide(1);
-    // });
-    // prevSlideBtn.addEventListener('click', (e) => {
-    //     plusSlide(-1);
-    // });
-    // const answer = prompt('vvedite imya', '');
-
-    // console.log(answer.match(/\d/g).join(' '));
 }
 
 export default slider;
