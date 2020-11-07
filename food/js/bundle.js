@@ -209,6 +209,8 @@ function calculator(){
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _services_services__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/services */ "./js/services/services.js");
+
 function cards(){
     // CARDS
     class CardTemplate {
@@ -245,16 +247,8 @@ function cards(){
 
         }
     }
-    const getResources = async (url) => {
-        const res = await fetch(url);
-        if(!res.ok){
-            throw new Error(`${url} is not found, server status: ${res.status}`);
-        }
 
-        return await res.json();
-    };
-
-    getResources('http://localhost:3000/menu')
+    Object(_services_services__WEBPACK_IMPORTED_MODULE_0__["getData"])('http://localhost:3000/menu')
     .then(object => {
         object.forEach(({src, altimg, title, descr, price}) => {
             new CardTemplate(src, altimg, title, descr, price, '.menu .container').createNewCard();
@@ -305,7 +299,7 @@ function formSender(modalTimer){
             spinnerLoading.style.cssText = 'display: block; margin: 0 auto';
             form.insertAdjacentElement('afterend', spinnerLoading);
 
-            Object(_services_services__WEBPACK_IMPORTED_MODULE_1__["default"])('http://localhost:3000/requests', json)
+            Object(_services_services__WEBPACK_IMPORTED_MODULE_1__["postData"])('http://localhost:3000/requests', json)
             .then(data => {
                 console.log(data);
                 changeModal(clientMassege.success);
@@ -387,7 +381,6 @@ function modalOpen(modalWindow, modalTimer){
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 
-
     if (modalWindow){
         clearInterval(modalTimer);  
         console.log(modalTimer);
@@ -461,7 +454,7 @@ function slider({counter, container, prev, next, slide, wrapper, field}){
         });
         dots[index - 1].style.opacity = 1;   
     }
-    
+
     let indicators = document.createElement('ul');
     slider.style.position = 'relative';
     indicators.style.cssText = `
@@ -563,46 +556,6 @@ function slider({counter, container, prev, next, slide, wrapper, field}){
             currentSlide.textContent = Object(_services_getzero__WEBPACK_IMPORTED_MODULE_0__["default"])(index);
         });
     });
-    // if(sliderImage.length < 10){                                 2 вариант слайдера
-    //     totalSlides.textContent = getZero(sliderImage.length);
-    // } else {
-    //     totalSlides.textContent = sliderImage.length;
-    // }
-
-    // showSlide(index);
-    // function showSlide(i){
-    //     if (i < 1){ 
-    //         index = sliderImage.length;
-    //     }
-    //     if(i > sliderImage.length){ 
-    //         index = 1;
-    //     }
-    //     sliderImage.forEach(slide => {
-    //         slide.classList.add('hide');
-    //         slide.classList.remove('show');
-    //     });
-
-    //     sliderImage[index - 1].classList.add('show');
-    //     sliderImage[index - 1].classList.remove('hide');
-     
-    //     if(sliderImage.length < 10){
-    //         currentSlide.textContent = getZero(index);
-    //     } else {
-    //         currentSlide.textContent = index;
-    //     }
-    // }
-    // function plusSlide(i){
-    //     showSlide(index += i);
-    // }
-    // nextSlideBtn.addEventListener('click', (e) => {       
-    //     plusSlide(1);
-    // });
-    // prevSlideBtn.addEventListener('click', (e) => {
-    //     plusSlide(-1);
-    // });
-    // const answer = prompt('vvedite imya', '');
-
-    // console.log(answer.match(/\d/g).join(' '));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (slider);
@@ -798,12 +751,14 @@ function getZero(num){             //добавляем 0 в числа мень
 /*!*********************************!*\
   !*** ./js/services/services.js ***!
   \*********************************/
-/*! exports provided: default */
+/*! exports provided: postData, getData */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-async function postData(url, data) {
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "postData", function() { return postData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getData", function() { return getData; });
+const postData = async function (url, data) {
     let result = await fetch(url, {
         method: 'POST',
         body: data,
@@ -814,8 +769,18 @@ async function postData(url, data) {
     return await result.json();
 }
 
+async function getData(url) {
+    let result = await fetch(url);
 
-/* harmony default export */ __webpack_exports__["default"] = (postData);
+    if(!result.ok) {
+        throw new Error(`Эта ссылка ${url} не работает, ${result.status}`)
+    }
+
+    return await result.json();
+}
+
+
+
 
 /***/ })
 

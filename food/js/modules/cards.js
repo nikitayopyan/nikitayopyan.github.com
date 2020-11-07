@@ -1,3 +1,4 @@
+import {getData} from '../services/services'
 function cards(){
     // CARDS
     class CardTemplate {
@@ -34,16 +35,8 @@ function cards(){
 
         }
     }
-    const getResources = async (url) => {
-        const res = await fetch(url);
-        if(!res.ok){
-            throw new Error(`${url} is not found, server status: ${res.status}`);
-        }
 
-        return await res.json();
-    };
-
-    getResources('http://localhost:3000/menu')
+    getData('http://localhost:3000/menu')
     .then(object => {
         object.forEach(({src, altimg, title, descr, price}) => {
             new CardTemplate(src, altimg, title, descr, price, '.menu .container').createNewCard();

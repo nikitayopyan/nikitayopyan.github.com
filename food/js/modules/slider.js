@@ -20,7 +20,7 @@ function slider({counter, container, prev, next, slide, wrapper, field}){
         });
         dots[index - 1].style.opacity = 1;   
     }
-    
+
     let indicators = document.createElement('ul');
     slider.style.position = 'relative';
     indicators.style.cssText = `

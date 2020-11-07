@@ -8,7 +8,6 @@ function modalOpen(modalWindow, modalTimer){
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 
-
     if (modalWindow){
         clearInterval(modalTimer);  
         console.log(modalTimer);
@@ -25,13 +24,13 @@ function modal(modalWindow, triggerModal, modalTimer){
         i.addEventListener('click', () => modalOpen(modalWindow, modalTimer));
     });
 
-    modal.addEventListener('click', (e) => {          
+    modal.addEventListener('click', (e) => {          // закрываем модальное окно по области ВНЕ самого окна
         if (e.target === modal || e.target.getAttribute('data-closed') == ''){
             closeModal(modalWindow);
         }
     });
 
-    document.addEventListener('keydown', event =>{    
+    document.addEventListener('keydown', event =>{    // закрываем окно клавишей Esc
         if (event.code == 'Escape'){
             closeModal(modalWindow);
         }

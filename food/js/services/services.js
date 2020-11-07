@@ -1,4 +1,4 @@
-async function postData(url, data) {
+const postData = async function (url, data) {
     let result = await fetch(url, {
         method: 'POST',
         body: data,
@@ -9,5 +9,15 @@ async function postData(url, data) {
     return await result.json();
 }
 
+async function getData(url) {
+    let result = await fetch(url);
 
-export default postData;
+    if(!result.ok) {
+        throw new Error(`Эта ссылка ${url} не работает, ${result.status}`)
+    }
+
+    return await result.json();
+}
+
+export {postData};
+export {getData};
